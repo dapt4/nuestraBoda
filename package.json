@@ -1,0 +1,14 @@
+{
+  "name": "paginaboda",
+  "version": "1.0.0",
+  "description": "pagina para nuestra boda",
+  "main": "index.js",
+  "scripts": {
+    "style": "sass --watch css/main.scss css/main.css"
+  },
+  "keywords": [
+    "boda"
+  ],
+  "author": "diego y maria",
+  "license": "ISC"
+}

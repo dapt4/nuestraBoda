@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&family=Dancing+Script:wght@400;500;600;700&display=swap");
+/*Signal Colors*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.content {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(9, auto);
+  background-color: #fdf6ec;
+}
+.content .jumbotron {
+  display: grid;
+  width: 100%;
+  height: 50vh;
+  text-align: center;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(10, 10%);
+  background-color: #cccccc;
+  background-image: url("../img/dia-jardin.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+.content .jumbotron_pareja {
+  display: block;
+  font-size: 2.5em;
+  font-style: italic;
+  font-family: "Dancing Script", cursive;
+  font-weight: 600;
+  grid-row: 2;
+}
+.content .jumbotron_mensaje {
+  display: block;
+  font-size: 1.25em;
+  text-transform: capitalize;
+  font-family: "Assistant", sans-serif;
+  font-weight: 700;
+  grid-row: 3;
+  margin-top: 10px;
+}
+.content .jumbotron_fecha {
+  display: block;
+  font-size: 0.85em;
+  text-transform: capitalize;
+  font-family: "Assistant", sans-serif;
+  font-weight: 700;
+  grid-row: 9;
+}
+.content .jumbotron .fas {
+  grid-row: 10;
+}
+.content .invitacion {
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  font-family: "Assistant", sans-serif;
+  color: #69595A;
+}
+.content .invitacion_titulo {
+  display: block;
+  font-size: 2.5em;
+  font-family: "Dancing Script", cursive;
+  font-weight: 400;
+}
+.content .invitacion_subtitulo {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}
+.content .invitacion_invitado {
+  font-weight: bold;
+  display: block;
+  font-size: 1.55em;
+  text-transform: capitalize;
+}
+.content .invitacion_pases {
+  font-size: 1.3em;
+  font-weight: 600;
+  font-style: italic;
+}
+.content .invitacion_contador {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  color: white;
+  background-color: #E77E83;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 1.5rem;
+  font-weight: bold;
+}
+.content .invitacion_contador--label {
+  font-size: 1em;
+}
+.content .invitacion_contador--dias {
+  font-size: 1.8em;
+}
+.content .invitacion_contador--postlabel {
+  font-size: 1em;
+}
+.content .ceremonia {
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  font-family: "Assistant", sans-serif;
+  color: #69595A;
+}
+.content .ceremonia_titulo {
+  display: block;
+  font-size: 1.8em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.content .ceremonia_subtitulo {
+  display: block;
+}
+.content .ceremonia_mensaje {
+  display: block;
+}
+.content .recepcion {
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  font-family: "Assistant", sans-serif;
+  color: #69595A;
+}
+.content .recepcion_titulo {
+  display: block;
+  font-size: 1.8em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.content .recepcion_subtitulo {
+  display: block;
+}
+.content .recepcion_mensaje {
+  display: block;
+}
+.content .codigoVestimenta {
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  font-family: "Assistant", sans-serif;
+  color: #69595A;
+}
+.content .codigoVestimenta_titulo {
+  display: block;
+  font-size: 1.8em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.content .codigoVestimenta_subtitulo {
+  display: block;
+  font-weight: 700;
+}
+.content .codigoVestimenta_mensaje {
+  display: block;
+}
+.content .regalo {
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  font-family: "Assistant", sans-serif;
+  color: #69595A;
+  background-color: #f3f1f1;
+}
+.content .regalo_titulo {
+  display: block;
+  font-size: 1.8em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.content .regalo_subtitulo {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+.content .regalo_mensaje {
+  display: none;
+}
+.content .regalo_mensaje.on {
+  display: block;
+}
+.content .instagram {
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  font-family: "Assistant", sans-serif;
+  color: white;
+  background: #ff4c6f;
+  background: radial-gradient(circle, #ff4c6f 30%, #8f158d 100%);
+}
+.content .instagram_titulo {
+  display: block;
+  font-size: 1.8em;
+  font-weight: 700;
+}
+.content .instagram_subtitulo {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+.content .instagram_mensaje {
+  display: block;
+}
+.content .confirmacion {
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  font-family: "Assistant", sans-serif;
+  color: #69595A;
+  margin: 10px 0;
+}
+.content .confirmacion_titulo {
+  display: block;
+  font-size: 1.8em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.content .confirmacion_subtitulo {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+.content .confirmacion_mensaje {
+  display: block;
+}
+.content .teEsperamos {
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  font-family: "Assistant", sans-serif;
+  color: #69595A;
+}
+.content .teEsperamos_titulo {
+  display: block;
+  font-size: 1.8em;
+  font-weight: 700;
+  text-transform: capitalize;
+  font-family: "Dancing Script", cursive;
+}
+.content .teEsperamos_subtitulo {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+.content .teEsperamos_mensaje {
+  display: block;
+}
+.content .button {
+  display: block;
+  text-decoration: none;
+  width: 60%;
+  margin: 10px auto;
+  border-radius: 5px;
+  padding: 1rem 0.5rem;
+  background-color: #E77E83;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+.content .button:hover {
+  background-color: #e16066;
+}
+.content .icons {
+  display: block;
+  width: 17%;
+  height: auto;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=main.css.map */
