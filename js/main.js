@@ -33,8 +33,11 @@ function init() {
     var nom = url.searchParams.get("nom");
     var pas = url.searchParams.get("ps");
 
-    invitado.textContent = normalize(nom);
-    pases.textContent = pas > 1 ? "Pases: " + pas : "Pase: " + pas;
+    if (nom && pas){
+        invitado.textContent = normalize(nom);
+        pases.textContent = pas > 1 ? "Pases: " + pas : "Pase: " + pas;
+    }
+
     actFecha();
 }
 
