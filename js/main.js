@@ -14,7 +14,7 @@ function normalize(text) {
 }
 
 function whats() {Saludos, quiero 
-    location.href = "https://api.whatsapp.com/send?phone=584122404287&text=Saludos,%20" + nom + "%20te%20confirma%20asistencia%para%la%boda";
+    location.href = "https://api.whatsapp.com/send?phone=584246738538&text=Saludos,%20" + nom + "%20te%20confirma%20asistencia%para%la%boda";
 }
 
 function regalo() {
