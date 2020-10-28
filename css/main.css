@@ -90,6 +90,11 @@
   margin: 0px auto;
   font-style: italic;
 }
+.content .mensaje_cita--autor {
+  display: block;
+  font-weight: 500;
+  margin-top: 7px;
+}
 .content .invitacion {
   width: 100%;
   padding: 20px 0;

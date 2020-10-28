@@ -90,6 +90,11 @@
             width: 80%;
             margin: 0px auto;
             font-style: italic;
+            &--autor{
+                display: block;
+                font-weight: 500;
+                margin-top: 7px;
+            }
         }
     }
     .invitacion {
