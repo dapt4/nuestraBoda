@@ -84,7 +84,7 @@
             font-weight: 600;
             font-style: italic;
         }
-        &_contador{
+        &_contador {
             display: grid;
             justify-content: center;
             align-content: center;
@@ -98,14 +98,17 @@
             margin-top: 10px;
             padding: 1.5rem;
             font-weight: bold;
-            &--label{  
+            &--label {
                 font-size: 1em;
             }
-            &--dias{
+            &--dias {
                 font-size: 1.8em;
             }
-            &--postlabel{
+            &--postlabel {
                 font-size: 1em;
+            }
+            &:hover {
+                background-color: darken($color: $rosa, $amount: 7);
             }
         }
     }

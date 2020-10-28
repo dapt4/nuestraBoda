@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&family=Dancing+Script:wght@400;500;600;700&display=swap");
-/*Signal Colors*/
 * {
   padding: 0;
   margin: 0;
@@ -107,6 +106,9 @@
 }
 .content .invitacion_contador--postlabel {
   font-size: 1em;
+}
+.content .invitacion_contador:hover {
+  background-color: #e16066;
 }
 .content .ceremonia {
   width: 100%;

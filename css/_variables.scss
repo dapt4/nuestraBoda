@@ -1,39 +1,9 @@
-$blanco: white;
-$negro: black;
-$gris30: rgb(170, 170, 170);
-$gris50: rgb(125, 125, 125);
-$gris70: rgb(76.5, 76.5, 76.5);
-$verde: rgba(130, 188, 0, 1);
-$verde2: rgba(207, 219, 0, 1);
-$amarillo: rgba(255, 200, 67, 1);
-$cafe: rgba(131, 96, 63, 1);
-
-/*Signal Colors*/
-$click: #0074E8 ;
-$hecho: $verde;
-$editar: $amarillo ;
-$borrar: #dc3545 ;
-$alerta: #ff9400;
-
 $crema: #fdf6ec;
 $rosa: #E77E83;
 $rosa2: #ECC8CA;
 $grisrosa: #69595A;
 $caferosa:#693A3C;
 $caferosa2:#B56468;
-
-
-$colores: (
-    blanco: $blanco,
-    negro: $negro,
-    gris30: $gris30,
-    gris50: $gris50,
-    gris70: $gris70,
-    verde: $verde,
-    verde2: $verde2,
-    amarillo: $amarillo,
-    cafe: $cafe,
-);
 
 //breakpoints as variables
 $xs: 0;
