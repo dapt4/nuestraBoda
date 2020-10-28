@@ -13,7 +13,7 @@ function normalize(text) {
     return text.toLowerCase().replace(/[-]/g, " ");
 }
 
-function whats() {Saludos, quiero 
+function whats() {
     location.href = "https://api.whatsapp.com/send?phone=584246738538&text=Saludos,%20" + nom + "%20te%20confirma%20asistencia%para%la%boda";
 }
 
