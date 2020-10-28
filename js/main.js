@@ -18,7 +18,7 @@ function whats() {
 }
 
 function regalo() {
-    location.href = "https://wa.link/qsuqo3";
+    location.href = "https://api.whatsapp.com/send?phone=584246738538&text=Saludos,%20" + nom.replace(/[-]/g, "%20") + "%20quiere%20confirmar%20su%20regalo%20de%20bodas";
 }
 
 //Fechas inicial y final
