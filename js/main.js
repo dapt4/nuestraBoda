@@ -1,6 +1,7 @@
 var invitado = document.querySelector(".invitacion_invitado");
 var pases = document.querySelector(".invitacion_pases");
 var fecha = document.querySelector(".invitacion_contador--dias");
+
 function showAccounts() {
     let box = document.querySelector(".regalo_mensaje");
     box.classList.toggle("on")
