@@ -21,11 +21,12 @@
         grid-template-columns: 100%;
         grid-template-rows: repeat(10, (100% / 10));
         background-color: #cccccc;
-        background-image: url("../img/dia-jardin.jpg");
+        background-image: url("../img/noche.jpg");
         background-position: top center;
         background-repeat: no-repeat;
         background-size: cover;
         color: white;
+        border-radius: 5px;
         &_pareja {
             display: block;
             font-size: 2.5em;
@@ -51,8 +52,44 @@
             font-weight: 700;
             grid-row: 9;
         }
-        .fas {
+        .arrow {
             grid-row: 10;
+            width: 5%;
+        }
+    }
+    .mensaje {
+        width: 100%;
+        padding: 20px 0;
+        font-family: "Assistant", sans-serif;
+        color: $grisrosa;
+        display: grid;
+        grid-template-rows: 50% 50%;
+        text-align: center;
+        // border-bottom: 0.5px solid #ebe5dc;
+        &_padres {
+            display: block;
+            width: 80%;
+            margin: 0 auto;
+            height: auto;
+            font-weight: 600;
+            &--novia {
+                float: left;
+                span {
+                    display: block;
+                }
+            }
+            &--novio {
+                float: right;
+                span {
+                    display: block;
+                }
+            }
+        }
+        &_cita {
+            display: block;
+            width: 80%;
+            margin: 0px auto;
+            font-style: italic;
         }
     }
     .invitacion {
@@ -168,6 +205,7 @@
         &_subtitulo {
             display: block;
             font-weight: 700;
+            font-size: 1.7em;
         }
         &_mensaje {
             display: block;
@@ -287,6 +325,11 @@
         display: block;
         width: 17%;
         height: auto;
+        margin: 0 auto;
+    }
+    .link{
+        display: block;
+        width: 80%;
         margin: 0 auto;
     }
 }

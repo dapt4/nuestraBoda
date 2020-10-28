@@ -20,11 +20,12 @@
   grid-template-columns: 100%;
   grid-template-rows: repeat(10, 10%);
   background-color: #cccccc;
-  background-image: url("../img/dia-jardin.jpg");
+  background-image: url("../img/noche.jpg");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
+  border-radius: 5px;
 }
 .content .jumbotron_pareja {
   display: block;
@@ -51,8 +52,43 @@
   font-weight: 700;
   grid-row: 9;
 }
-.content .jumbotron .fas {
+.content .jumbotron .arrow {
   grid-row: 10;
+  width: 5%;
+}
+.content .mensaje {
+  width: 100%;
+  padding: 20px 0;
+  font-family: "Assistant", sans-serif;
+  color: #69595A;
+  display: grid;
+  grid-template-rows: 50% 50%;
+  text-align: center;
+}
+.content .mensaje_padres {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  height: auto;
+  font-weight: 600;
+}
+.content .mensaje_padres--novia {
+  float: left;
+}
+.content .mensaje_padres--novia span {
+  display: block;
+}
+.content .mensaje_padres--novio {
+  float: right;
+}
+.content .mensaje_padres--novio span {
+  display: block;
+}
+.content .mensaje_cita {
+  display: block;
+  width: 80%;
+  margin: 0px auto;
+  font-style: italic;
 }
 .content .invitacion {
   width: 100%;
@@ -164,6 +200,7 @@
 .content .codigoVestimenta_subtitulo {
   display: block;
   font-weight: 700;
+  font-size: 1.7em;
 }
 .content .codigoVestimenta_mensaje {
   display: block;
@@ -278,6 +315,11 @@
   display: block;
   width: 17%;
   height: auto;
+  margin: 0 auto;
+}
+.content .link {
+  display: block;
+  width: 80%;
   margin: 0 auto;
 }
 
