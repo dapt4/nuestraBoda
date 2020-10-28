@@ -318,9 +318,58 @@
   margin: 0 auto;
 }
 .content .link {
-  display: block;
+  display: grid;
   width: 80%;
+  height: 100vh;
   margin: 0 auto;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(8, calc(100% / 8));
+  color: #69595A;
+  text-align: center;
+  font-family: "Assistant", sans-serif;
+}
+.content .link p {
+  grid-row: 2;
+  font-size: 1.6em;
+  font-family: "Dancing Script", cursive;
+}
+.content .link .input {
+  display: block;
+}
+.content .link .input label {
+  font-weight: 600;
+  font-size: 1.3em;
+  display: block;
+}
+.content .link .input input {
+  width: 80%;
+}
+.content .link .input.invitado {
+  grid-row: 4;
+}
+.content .link .input.pases {
+  grid-row: 5;
+}
+.content .link .results {
+  grid-row: 6;
+}
+.content .link .results input {
+  margin-top: 20px;
+  width: 80%;
+}
+.content .link .results button {
+  background-color: #E77E83;
+  color: white;
+  border: none;
+  padding: 0.8em 1.3em;
+  width: 40%;
+  border-radius: 5px;
+}
+.content .link .results button.generar {
+  border-radius: 5px 1px 1px 5px;
+}
+.content .link .results button.copiar {
+  border-radius: 1px 5px 5px 1px;
 }
 
 /*# sourceMappingURL=main.css.map */

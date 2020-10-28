@@ -13,12 +13,19 @@
 	<div class="content">
 		<div class="link">
 			<p>Ingresa el nombre del invitado o la familia y el numero de pases...</p>
-			<label for="invitado">Invitado: </label>
-			<input id="invitado" type="text">
-			<label for="pases">Pases: </label>
-			<input id="pases" type="text">
-			<button onclick="generar()">Generar</button>
-			<input id="result" type="text">
+			<div class="input invitado">
+				<label for="invitado">Invitado: </label>
+				<input id="invitado" type="text">
+			</div>
+			<div class="input pases">
+				<label for="pases">Pases: </label>
+				<input id="pases" type="text">
+			</div>
+			<div class="results">
+				<button class="generar" onclick="generar()">Generar</button>
+				<button class="copiar" onclick="copiar()">Copiar</button>
+				<input id="result" type="text">
+			</div>
 		</div>
 	</div>
 </body>

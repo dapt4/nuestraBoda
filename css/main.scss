@@ -327,9 +327,59 @@
         height: auto;
         margin: 0 auto;
     }
-    .link{
-        display: block;
+    .link {
+        display: grid;
         width: 80%;
+        height: 100vh;
         margin: 0 auto;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(8, calc(100% / 8));
+        color: $grisrosa;
+        text-align: center;
+        font-family: "Assistant", sans-serif;
+
+        p {
+            grid-row: 2;
+            font-size: 1.6em;
+            font-family: "Dancing Script", cursive;
+        }
+        .input {
+            display: block;
+            label {
+                font-weight: 600;
+                font-size: 1.3em;
+                display: block;
+            }
+            input {
+                width: 80%;
+            }
+            &.invitado {
+                grid-row: 4;
+            }
+            &.pases {
+                grid-row: 5;
+            }
+        }
+        .results {
+            grid-row: 6;
+            input {
+                margin-top: 20px;
+                width: 80%;
+            }
+            button {
+                background-color: $rosa;
+                color: white;
+                border: none;
+                padding: 0.8em 1.3em;
+                width: 40%;
+                border-radius: 5px;
+                &.generar {
+                    border-radius: 5px 1px 1px 5px;
+                }
+                &.copiar {
+                    border-radius: 1px 5px 5px 1px;
+                }
+            }
+        }
     }
 }
