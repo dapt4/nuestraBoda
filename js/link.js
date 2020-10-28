@@ -3,7 +3,7 @@ var pases = document.querySelector("#pases");
 var result = document.querySelector("#result");
 
 function normalize(text) {
-    return text.toLowerCase().replace(/[- ]/g, "-");
+    return text.toLowerCase().replace(/[ ]/g, "-");
 }
 
 function generar() {
