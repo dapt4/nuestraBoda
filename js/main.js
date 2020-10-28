@@ -1,3 +1,5 @@
+var nom;
+var pas;
 var invitado = document.querySelector(".invitacion_invitado");
 var pases = document.querySelector(".invitacion_pases");
 var fecha = document.querySelector(".invitacion_contador--dias");
@@ -11,8 +13,12 @@ function normalize(text) {
     return text.toLowerCase().replace(/[-]/g, " ");
 }
 
-function whats() {
-    location.href = "https://wa.link/9x9usr";
+function whats() {Saludos, quiero 
+    location.href = "https://api.whatsapp.com/send?phone=584122404287&text=Saludos,%20" + nom + "%20te%20confirma%20asistencia%para%la%boda";
+}
+
+function regalo() {
+    location.href = "https://wa.link/qsuqo3";
 }
 
 //Fechas inicial y final
@@ -28,11 +34,15 @@ function actFecha() {
     fecha.textContent = dias;
 }
 
-function init() {
+function getData() {
     var url_string = window.location.href;
     var url = new URL(url_string);
-    var nom = url.searchParams.get("nom");
-    var pas = url.searchParams.get("ps");
+    nom = url.searchParams.get("nom");
+    pas = url.searchParams.get("ps");
+}
+
+function init() {
+    getData()
 
     if (nom && pas){
         invitado.textContent = normalize(nom);
